@@ -6,8 +6,7 @@
 
 // RGB LIGHTING
 #define RGBLIGHT_LED_COUNT 6        // Number of LEDs
-#define RGBLIGHT_DEFAULT_HUE 28     // The default hue to use upon clearing the EEPROM
-#define RGBLIGHT_LIMIT_VAL 160      // The maximum brightness level (Max 255)
+#define RGBLIGHT_DEFAULT_HUE 20     // The default hue to use upon clearing the EEPROM
 
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_ALTERNATING
