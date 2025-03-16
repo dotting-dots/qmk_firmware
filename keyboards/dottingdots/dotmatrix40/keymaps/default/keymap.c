@@ -6,16 +6,16 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [0] = LAYOUT(
-        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,    KC_O,   KC_P,    KC_BSPC,
-        KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,   KC_G,   KC_H,   KC_J,   KC_K,    KC_L,   KC_LBRC, KC_RBRC,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM, KC_DOT, KC_SLSH, KC_MINS,
-        MO(1),   KC_LOPT, KC_LCMD, KC_LNG1, KC_SPC,     KC_NO,      KC_ENT, KC_LNG3, KC_EQL, KC_GRV,  MO(2)
+        KC_MINS, KC_Q,    KC_W,    KC_E,    KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,     KC_O,    KC_P,    KC_BSPC,
+        KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,   KC_G,   KC_H,   KC_J,   KC_K,     KC_L,    KC_SCLN, KC_QUOT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,  KC_DOT,  KC_UP,   KC_SLSH,
+        KC_LCTL, MO(1),   KC_LALT, KC_LNG2, KC_SPC,     KC_NO,      KC_ENT, KC_LNG1,  KC_LEFT, KC_DOWN, KC_RGHT
     ),
     [1] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,        KC_NO,   KC_NO,   KC_NO,       KC_NO,   KC_NO,   KC_NO,   KC_NO
+        KC_ESC,  KC_F10,  KC_F11,  KC_F12,  KC_SCLN, KC_NO,  KC_NO, KC_QUOT, KC_PPLS,  KC_7,   KC_8,    KC_9,
+        KC_TRNS, KC_F7,   KC_F8,   KC_F9,   KC_NO,   KC_NO,  KC_NO, KC_NO,   KC_PMNS,  KC_4,   KC_5,    KC_6,
+        KC_TRNS, KC_F4,   KC_F5,   KC_F6,   KC_LBRC, KC_NO,  KC_NO, KC_RBRC, KC_PAST,  KC_1,   KC_2,    KC_3,
+        KC_TRNS, KC_F1,   KC_F2,   KC_F3,   MO(2),       KC_NO,     KC_DEL,  KC_PSLS,  KC_0,   KC_PEQL, KC_PDOT
     ),
     [3] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 /* layer 0 */    [0]   = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD)},
-/* layer 1 */    [1]   = { ENCODER_CCW_CW(BL_DOWN, BL_UP)},
+/* layer 1 */    [1]   = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD)},
 /* layer 2 */    [2]   = { ENCODER_CCW_CW(BL_DOWN, BL_UP)},
 /* layer 3 */    [3]   = { ENCODER_CCW_CW(KC_NO, KC_NO)},
 /* layer 4 */    [4]   = { ENCODER_CCW_CW(KC_NO, KC_NO)},
