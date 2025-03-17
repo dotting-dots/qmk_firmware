@@ -9,7 +9,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MINS, KC_Q,    KC_W,    KC_E,    KC_R,   KC_T,   KC_Y,    KC_U,    KC_I,     KC_O,    KC_P,    KC_BSPC,
         KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,   KC_G,   KC_H,    KC_J,    KC_K,     KC_L,    KC_SCLN, KC_QUOT,
         KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,   KC_B,   KC_N,    KC_M,    KC_COMM,  KC_DOT,  KC_UP,   KC_SLSH,
-        MO(1),   KC_LALT, KC_LCTL, KC_LNG2, KC_SPC,     KC_NO,       KC_ENT,  KC_LNG1,  KC_LEFT, KC_DOWN, KC_RGHT
+        MO(1),   KC_LCTL, KC_LALT, KC_LNG2, KC_SPC,     KC_NO,       KC_ENT,  KC_LNG1,  KC_LEFT, KC_DOWN, KC_RGHT
     ),
     [1] = LAYOUT(
         KC_ESC,  KC_F10,  KC_F11,  KC_F12,  KC_SCLN, KC_NO,  KC_NO,  KC_QUOT,  KC_PPLS,  KC_7,   KC_8,    KC_9,
@@ -69,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-/* layer 0 */    [0]   = { ENCODER_CCW_CW(MS_WHLR, MS_WHLL)},
+/* layer 0 */    [0]   = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD)},
 /* layer 1 */    [1]   = { ENCODER_CCW_CW(MS_WHLR, MS_WHLL)},
 /* layer 2 */    [2]   = { ENCODER_CCW_CW(BL_DOWN, BL_UP)},
 /* layer 3 */    [3]   = { ENCODER_CCW_CW(KC_NO, KC_NO)},
